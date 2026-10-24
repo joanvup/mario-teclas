@@ -1,0 +1,24 @@
+{
+  "name": "tecladoaventura",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Tecladoaventura: El Reino de las Teclas - juego educativo de plataformas para aprender a usar el teclado",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:build": "playwright test -c playwright.build.config.js",
+    "test:levels": "node scripts/completion-harness.mjs",
+    "test:all": "npm run test:levels && npm run test && npm run test:e2e && npm run build && npm run test:build",
+    "validate": "npm run test:levels && npm run test && npm run build && npm run test:build"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "vite": "^7.0.5",
+    "vitest": "^3.2.4"
+  }
+}

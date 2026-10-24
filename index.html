@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#2a1e5c" />
+    <meta
+      name="description"
+      content="Tecladoaventura: El Reino de las Teclas. Juego de plataformas para aprender a usar el teclado."
+    />
+    <title>Tecladoaventura: El Reino de las Teclas</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="stage" aria-live="polite">
+        <canvas id="game-canvas" class="game-canvas" hidden aria-label="Zona de juego"></canvas>
+        <div id="hud" class="hud" hidden></div>
+        <main id="screens" class="screens"></main>
+      </div>
+      <div id="modal-root" class="modal-root"></div>
+      <div id="toast-root" class="toast-root" role="status" aria-live="polite"></div>
+      <div id="sr-live" class="sr-only" aria-live="assertive"></div>
+      <div id="first-interaction" class="first-interaction" hidden></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
